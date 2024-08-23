@@ -5,7 +5,7 @@ This project showcases a full-fledged ETL (Extract, Transform, Load) pipeline fo
 ## Project Overview
 
 ### 1. Data Extraction
-The pipeline begins by connecting to the Redfin data source and extracting real estate data using Python. The data includes various attributes such as property prices, locations, and other key metrics.
+The pipeline begins by connecting to the Redfin data source and extracting real estate data using Python.
 
 ### 2. Data Transformation
 The extracted data is then transformed using pandas. This step involves cleaning the data, handling missing values, and formatting it to suit analytical needs. Both raw and transformed data are stored in an Amazon S3 bucket for further processing.
@@ -14,7 +14,7 @@ The extracted data is then transformed using pandas. This step involves cleaning
 Upon arrival in the S3 bucket, an AWS Snowpipe is triggered. Snowpipe automatically runs a COPY command to load the transformed data into a Snowflake data warehouse table, making it available for querying and analysis.
 
 ### 4. Data Visualization
-Finally, Power BI is connected to the Snowflake data warehouse. This enables the creation of visualizations and dashboards that provide actionable insights based on the processed real estate data.
+Finally, Power BI is connected to the Snowflake data warehouse. This enables the creation of visualizations that provide actionable insights based on the processed real estate data.
 
 ## Key Technologies
 
@@ -23,4 +23,4 @@ Finally, Power BI is connected to the Snowflake data warehouse. This enables the
 - **Amazon S3**: For storing raw and transformed data.
 - **Snowpipe**: To automate data loading into Snowflake.
 - **Snowflake**: As the data warehouse for storing and querying the data.
-- **Power BI**: For data visualization and reporting.
+- **Power BI**: For data visualization.
